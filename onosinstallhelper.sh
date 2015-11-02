@@ -97,9 +97,3 @@ fi
 
 cd onos-onos-$_version/
 mvn clean install
-
-
-
-
-
-
