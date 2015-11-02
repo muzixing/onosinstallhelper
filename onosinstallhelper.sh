@@ -22,7 +22,7 @@ if [ -f apache-karaf-3.0.2.tar.gz ]
 then 
 	echo "apache-karaf-3.0.2.tar.gz has exist"
 else 
-	wget http://apache.fayea.com/karaf/3.0.2/apache-karaf-3.0.2.tar.g
+	wget http://apache.fayea.com/karaf/3.0.2/apache-karaf-3.0.2.tar.gz
 	tar -xzf apache-karaf-3.0.2.tar.gz
 fi
 
@@ -38,9 +38,11 @@ else
 
 	# set environment
 	echo "export M2_HOME=/usr/local/apache-maven" >> /etc/profile
-	echo "export PATH=$PATH:$M2_HOME/bin" >> /etc/profile
-
 	source /etc/profile
+	echo "export PATH=$PATH:$M2_HOME/bin" >> /etc/profile
+	source /etc/profile
+	# in case of failure of setting environment
+	export PATH=$PATH:$M2_HOME/bin
 fi
 
 # Install java-8-oracle
