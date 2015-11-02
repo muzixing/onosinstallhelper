@@ -1,11 +1,11 @@
-# onosinstallhelper
+# ONOSInstallHelper
 
 This is a automatic installation script for install ONOS on Ubuntu 12.04+.
 
 To make installation easiest. This helper script which should get all dependencies and download, build, and install ONOS.
 
 
-##DEPENDENCES
+##Dependences
 
  * zip(for unzipping files)
  * python-software-properties(for add-apt-repository)
