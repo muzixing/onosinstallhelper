@@ -25,6 +25,7 @@ else
 	wget http://apache.fayea.com/karaf/3.0.2/apache-karaf-3.0.2.tar.gz
 	tar -xzf apache-karaf-3.0.2.tar.gz
 	echo "export KARAF_ROOT=/root/Applications/apache-karaf-3.0.2" >> /etc/profile
+	source /etc/profile
 	echo "export PATH=$PATH:$KARAF_ROOT/bin" >> /etc/profile
 	source /etc/profile
 	#in case of source failure.
