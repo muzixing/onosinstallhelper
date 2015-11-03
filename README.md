@@ -32,7 +32,7 @@ Note: This script has only been tested on Ubuntu 12.04 LTS.
 
 * karaf command not found
 	
-		export PATH=$PATH:KAFAF_ROOT/bin
+		export PATH=$PATH:$KAFAF_ROOT/bin
 	
 
 # Contributor
