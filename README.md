@@ -14,7 +14,7 @@ To make installation easiest. This helper script which should get all dependenci
 
 The directory of karaf and maven is /root/Applications
 
-##Install
+## Install
 	
 	git clone https://github.com/muzixing/onosinstallhelper.git
 	cd onosinstallhelper
@@ -24,7 +24,18 @@ we can intall specified version ONOS by set the \_version in script. The default
 
 Note: This script has only been tested on Ubuntu 12.04 LTS.
 
-#Contributor
+# FQA
+
+* mvn command not found
+	
+	export PATH=$PATH:$M2_HOME/bin
+
+* karaf command not found
+	
+	export PATH=$PATH:KAFAF_ROOT/bin
+	
+
+# Contributor
 
  * [muzixing](https://github.com/muzixing)
 
